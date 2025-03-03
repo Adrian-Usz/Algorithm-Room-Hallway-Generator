@@ -15,19 +15,19 @@ char wallChar = 'W'; //Character for the walls
 char floorChar = 'F'; //Character for the floor
 //! Rooms start at the X, Y defined and go to the right and down from that point to generate that room
 
-void rpgGenerator(size_t row, size_t col);
+void rpgSimpleGenerator(size_t row, size_t col);
 
 
 int main()
 {   
     size_t rpgRow = 50;
     size_t rpgCol = 50;
-    rpgGenerator(rpgRow, rpgCol);    
+    rpgSimpleGenerator(rpgRow, rpgCol);    
 
     return 0;
 }
 
-void rpgGenerator(size_t row, size_t col){
+void rpgSimpleGenerator(size_t row, size_t col){
     if (row % 2 == 0)
     {
         row += 1;
